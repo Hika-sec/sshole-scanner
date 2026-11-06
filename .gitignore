@@ -1,8 +1,0 @@
-# Exclude local test files and artifacts
-task*
-*.swp
-*.log
-vulnerable.txt
-targets*.txt
-.venv/
-__pycache__/
