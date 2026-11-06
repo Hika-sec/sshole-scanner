@@ -2,6 +2,10 @@
 
 A multithreaded SSH scanner for the SSHole vulnerability research workflow. It probes SSH services and attempts authentication using the vendored `ssh.SSHHoleAuth(probe, payload)` method, writing responsive targets to an output file.
 
+## Releases
+
+Precompiled standalone binaries for Linux and Windows are available on the [Releases](https://github.com/Hika-sec/sshole-scanner/releases) page.
+
 ## Flags
 
 | Flag | Default | Description |
@@ -17,12 +21,6 @@ A multithreaded SSH scanner for the SSHole vulnerability research workflow. It p
 | `-v` | `false` | Verbose output. Prints connection/auth rejection details. |
 
 At least one input source is required: `-f` and/or `-r`. If neither is provided, the scanner prints usage and exits.
-
-## Precompiled Binaries
-
-Standalone precompiled binaries are available in the [`releases/`](releases/) folder:
-- **Linux (x86_64):** `releases/sshhole-scanner-linux-amd64`
-- **Windows (x86_64):** `releases/sshhole-scanner-windows-amd64.exe`
 
 ## Build (Go)
 
