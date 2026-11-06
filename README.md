@@ -18,6 +18,12 @@ A multithreaded SSH scanner for the SSHole vulnerability research workflow. It p
 
 At least one input source is required: `-f` and/or `-r`. If neither is provided, the scanner prints usage and exits.
 
+## Precompiled Binaries
+
+Standalone precompiled binaries are available in the [`releases/`](releases/) folder:
+- **Linux (x86_64):** `releases/sshhole-scanner-linux-amd64`
+- **Windows (x86_64):** `releases/sshhole-scanner-windows-amd64.exe`
+
 ## Build (Go)
 
 The scanner module lives in `scanner/` and uses a local `replace` for `golang.org/x/crypto`:
